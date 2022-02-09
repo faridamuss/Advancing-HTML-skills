@@ -1,0 +1,15 @@
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#styled input, #styled button {
+	border-radius: 8px;
+	cursor: pointer; 
+}
+input, button {
+	margin: 10px;
+}

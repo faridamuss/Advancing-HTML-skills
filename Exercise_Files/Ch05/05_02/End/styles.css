@@ -1,0 +1,45 @@
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+label {
+	display: block;
+}
+input[type="checkbox"]+label {
+	display: inline;
+}
+fieldset {
+	border-width: 0;
+	padding: 0;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+	width: 90%;
+	margin: .2em auto .8em auto;
+}
+#zip {
+	width: auto;
+}
+select, fieldset, legend {
+	margin: .2em auto .8em auto;
+}
+legend {
+	margin-left: -.1em;
+	font-weight: bold;
+}
+@media (min-width: 35em) {
+	label { 
+		display: inline;
+	 }
+	 input[type="text"], input[type="tel"], input[type="email"] {
+	 	width: 55%
+	 }
+	 label {
+	 	width: 10em;
+	 	display: inline-block;
+	 }
+
+}

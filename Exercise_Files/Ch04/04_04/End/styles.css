@@ -1,0 +1,22 @@
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input[type="checkbox"] {
+	opacity: 0;
+}
+input[type="checkbox"] + label {
+	background: url(checkbox-empty.png) left center no-repeat;
+	background-size: 1em 1em;
+	padding-left: 1.5em;
+	margin-left: -1.5em;
+}
+input[type="checkbox"]:checked + label {
+	background: url(checkbox-checked.png) left center no-repeat;
+	background-size: 1em 1em;
+
+}
