@@ -10,17 +10,22 @@
 <body>
   <fieldset>
     <legend>Your contact details</legend>
-
     <label for="fullName">Name :</label>
     <input type="text" name="fullName" id="fullName"><br><br>
-
     <label for="email">Email: </label>
     <input type="email" name="email" id="email"><br><br>
-
     <label for="phone">Phone :</label>
     <input type="tel" name="phone" id="phone"><br><br>
-
     <button type="submit" id="submit">Submit</button>
   </fieldset>
+
+  <fieldset>
+    <legend>Your food preferences</legend>
+    <input type="radio" name="food" id="noPref" value="noPreference">No preference<br>
+    <input type="radio" name="food" id="noPref" value="Vegetarians">Vegetarians<br>
+    <input type="radio" name="food" id="noPref" value="Vegan">Vegan<br>
+    <input type="radio" name="food" id="noPref" value="Pescetarians">Pescetarians<br>
+  </fieldset>
+
 </body>
 </html>
