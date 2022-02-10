@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <form action="" method="post" id="contact">
+
+  <!-- Explicit Label -->
+
+      <fieldset>
+        <legend>Explicit Labels</legend>
+
+        <label for="fullname"> Name: </label>
+        <input type="text" name="full_name" id="fullName">
+
+        <label for="email"> Email: </label>
+        <input type="email" name="email" id="email">
+
+        <label for="phone"> Phone: </label>
+        <input type="tel" name="phone" id="phone">
+      </fieldset>
+
+    <!-- Implicit Label  -->
+
+  <fieldset>
+    <legend>Implicit Labels</legend>
+
+    <label for="fullName2">Name: 
+      <input type="text" name:"full_name2" id="fullName">
+    </label>
+
+    <label for="email">Email: 
+      <input type="email" name:"email2" id="email2">
+    </label>
+
+    <label for="phone2">Phone: 
+      <input type="tel" name:"phone2" id="phone2">
+    </label>
+
+  </fieldset>
+
+  <!-- Label with Radio Buttons -->
+  <fieldset>
+    <legend>Labels with radio buttons</legend>
+    <div class="checks">
+      <label for="r1">
+        <input type="radio" name="radio_choice" id="r1" value="radio1">Radio 1
+      </label><br>
+      <label for="r2">
+        <input type="radio" name="radio_choice" id="r2" value="radio2">Radio 2
+      </label><br>
+      <label for="r3">
+        <input type="radio" name="radio_choice" id="r3" value="radio3">Radio 3
+      </label><br>
+    </div>
+  </fieldset>
+
+  <input type="submit" id="submit" value="Sign up now">
+
+    </form>
+  </section>
+  
+</body>
+</html>
