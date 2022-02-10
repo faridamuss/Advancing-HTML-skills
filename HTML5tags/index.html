@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <form action="" method="post" id="contact">
+      <fieldset>
+        <legend>Select</legend>
+        <label for="mealchoice">Meal Choice:</label>
+        <!-- Dropdown menu - use select tag followed by option tag -->
+        <select name="mealchoice" id="mealChoice">
+          <option value="no_preference">No Preference</option>
+          <option value="vegetarians">Vegetarians</option>
+          <option value="vagan">Vegan</option>
+          <option value="pescetarians">Pescetarians</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Detalist</legend>
+        <label for="mealchoice2">Meal Choice</label>
+<!-- List attribute on input and id on datalist element must match. This provides the link between the two -->
+<!-- datalist code here -->
+         <input type="text" name="meal_choice2" id="mealChoice2" list="type_of_meal">
+         <datalist id="type_of_meal"> 
+          <option value="no_preference">No Preference</option>
+          <option value="vegetarians">Vegetarians</option>
+          <option value="vagan">Vegan</option>
+          <option value="pescetarians">Pescetarians</option>
+         </datalist>
+      </fieldset>
+      <input type="submit" id="submit" value="Send your meal choice">
+    </form>
+
+<!--The content between output HTML tags represent a container where the result of a calculation may be displayed. The most crucial attributes used with HTML output tags are for and name. The first one spacifies the elements used as inputs for the calculation, and the second one names the outputted element.  -->
+
+<!-- Here we are using one of the HTML5 form events (Events that occur due to the user interacting with the HTML form controls), oninput, which fires when the value of an element is changed by the user -->
+        <form id="output" oninput="result.value=parseInt(x.value)+parseInt(y.value)">
+        <fieldset>
+          <legend>Output</legend>
+            <input type="range" id="x" value="0">
+          + <input type="number" id="y" value="10">
+          = <output name="result" for="x y"></output>
+        </fieldset>
+        </form>
+
+
+
+  </section>
+</body>
+</html>
