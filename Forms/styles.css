@@ -1,14 +1,55 @@
-fieldset, legend, label, input {
-  color: darkblue;
-  font-weight: bold;
-  margin: .5em .5em;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
 }
-input[type="text"] {
-  color: black;
+
+fieldset {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    width: 30%;
+    min-width: 200px;
 }
-input[type="email"] {
-  color: black;
+
+fieldset:last-of-type {
+    margin-bottom: 1em;
 }
-input[type="tel"] {
-  color: black;
+
+legend {
+    font-size: 1.75em;
+    padding: 0 .25em;
+    color: #999;
+}
+
+label {
+    display: block;
+    padding-top: .5em;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input {
+    padding: .5em;
+}
+
+textarea {
+    min-height: 8em;
+    min-width: 16em;
+    padding: .5em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin: .5em 0;
+}
+
+input[type="submit"] {
+    margin: 0 2.75em 1em;
+    padding: .25em;
+    display: block;
 }
