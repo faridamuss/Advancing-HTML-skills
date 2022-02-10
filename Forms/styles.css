@@ -1,0 +1,17 @@
+fieldset, legend, label, input {
+  color: blueviolet;
+  font-weight: bold;
+  margin: .5em .5em;
+}
+
+input[type="text"] {
+  color: black;
+}
+
+input[type="email"] {
+  color: black;
+}
+
+input[type="tel"] {
+  color: black;
+}
