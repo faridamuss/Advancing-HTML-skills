@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling your form | Toggle Switch</title>
+    
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+      
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact Us</legend>
+                
+                <p>Please reach out to us if you have any questions about our life changing outdoor experiences. </p>
+                
+                <label for="fullName">Your Name:</label>
+                <input type="text" name="fullName" id="fullName">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone">
+                
+                <label for="msg">Your Message:</label>
+                <textarea name="msg" id="msg"></textarea>
+                
+                <div class="checks">
+                    <input type="checkbox" name="copyEmail" id="copyEmail">
+                    <span></span>
+                    <label for="copyEmail">Send copy to my-email</label>
+                </div>
+                
+                <hr>
+                
+                <div class="radioBtns">
+                   <p>Preferred method of contact:</p>
+                   
+                  <label for="contactEmail">
+                   <input type="radio" name="contact" id="contactEmail" value="email">
+                   <span></span>
+                   Email</label> 
+
+                    <label for="contactTel">
+                    <input type="radio" name="contact" id="contactTel" value="phone">
+                    <span></span>
+                    Phone call</label> 
+                    
+                    <label for="contactText">
+                    <input type="radio" name="contact" id="contactText" value="text">
+                    <span></span>
+                    Text message</label> 
+                </div>
+                
+<!--  Code for toggle switch -->
+                <label class="toggleSwitch">
+                    <input type="checkbox">
+                    <span class="checkbox-value" aria-hidden="true"></span>
+                     Signup for our newsletter
+                </label>
+                
+                <input type="submit" id="submit" value="Contact Us">
+            </fieldset>
+        </form>
+        
+    
+    </section>
+</body>
+</html>
