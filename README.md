@@ -11,3 +11,6 @@ In these course I learnt:
 
 ### Simple Form 
 ![example of simple form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Simple%20form.gif)
+
+### Form with floating labels
+![form with floating labels](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Form_floating_labels.gif)
