@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+fieldset {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    width: 50%;
+}
+
+label, .checks {
+    display: block;
+    padding-top: .5em;
+    margin-top: 1em;
+    border-top: solid 1px #dedede;
+}
+
+label:first-of-type {
+    border:none;
+    margin-top: 0;
+}
+
+label[for="radio"], label[for="checkbox"] {
+    margin-right:  1em;
+}
+
+label[for="radio"], input[type="radio"], label[for="checkbox"], input[type="checkbox"], input[type="image"], input[type="range"]{
+    display: inline-block;
+    border:none;
+}
+
+label[for="checkbox2"], label[for="radio2"] {
+    border-top: none;
+    display: inline-block;
+}
+
+input {
+    display: block;
+    border: solid 1px #999;
+    margin-top: 2px;
+    padding: 4px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/*         to style range across the board */
+input[type=range] {
+  -webkit-appearance: none;
+  width: auto;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* style the track for webkit  */
+input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  cursor: pointer;
+  border: solid 1px #999;
+  background-color: #999;
+}
+
+/* style the slider thumb (circle) */
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #333;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+  background-color: #fbfbfb;
+}
+
+/* style the bar on focus*/
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #333;
+}
+        
+/* firefox */
+input[type=range]::-moz-range-track {
+    height: 5px;
+    cursor: pointer;
+    border: solid 1px #999;
+    background-color: #999;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background-color: #333;
+    outline: none;
+}
+
+        
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #333;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* Microsoft    */     
+input[type=range]::-ms-track {
+    width: auto;
+    height: 5px;
+    cursor: pointer;
+    border: solid 1px #999;
+    background-color: #999;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #999;
+  border: 0.2px solid #999;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #999;
+  border: 0.2px solid #999;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #333;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #999;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #999;
+}

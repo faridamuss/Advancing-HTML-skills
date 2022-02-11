@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attributes</title>
+    
+    <link rel="stylesheet" href="02_04_main.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Input Types</legend>
+            
+            <label for="text">Text:</label> 
+            <input type="text" name="text" id="text">
+            
+            <div class="checks">
+                <p>Checkbox</p>
+                <input type="checkbox" name="checkbox" id="checkbox" value="cone">
+                <label for="checkbox">One:</label> 
+            
+                <input type="checkbox" name="checkbox" id="checkbox2"  value="ctwo">
+                <label for="checkbox2">Two:</label> 
+            </div>
+            
+            <div class="checks">
+               <p>Radio Buttons</p>
+               <input type="radio" name="radio" id="radio" value="rone">
+                <label for="radio">Radio one</label> 
+                
+                <input type="radio" name="radio" id="radio2" value="rtwo">
+                <label for="radio2">Radio two</label> 
+            </div>
+            
+            <label for="image">Image:</label> 
+            <input type="image" src="images/pineAppleBtn.png" alt="pineapple button" name="image" id="image">
+            
+            <label for="file">File:</label> 
+            <input type="file" name="file" id="file">
+            
+            <label for="button">Button:</label> 
+            <input type="button" name="button" id="button" value="button">
+            
+            <label for="submit">Submit:</label> 
+            <input type="submit" name="submit" id="submit">
+            <!--Can change what submit says by adding the value attribute -->
+            
+            <label for="reset">Reset:</label> 
+            <input type="reset" name="reset" id="reset">
+            
+            <label for="password">Password:</label> 
+            <input type="password" name="password" id="password">
+            
+            <label>Hidden:
+                <input type="hidden" name="hidden" id="hidden">
+            </label> 
+            
+        </fieldset>
+            
+        <fieldset>
+            <legend>New Input Types</legend>
+            
+            <label for="email">Email:</label> 
+            <input type="email" name="email" id="email">
+            
+            <label for="url">URL:</label> 
+            <input type="url" name="url" id="url">
+            
+            <label for="tel">Phone:</label> 
+            <input type="tel" name="tel" id="tel">
+            
+            <label for="search">Search:</label> 
+            <input type="search" name="search" id="search">
+            
+            
+            <label for="color">Color:</label> 
+            <input type="color" name="color" id="color">
+            
+            <label for="number">Number:</label> 
+            <input type="number" name="number" id="number">
+            <!--<input type="number" name="number" id="number" min="1" max="5">-->
+            
+            <label for="date">Date:</label> 
+            <input type="date" name="date" id="date">
+            
+            <label for="datetimelocal">DateTime-local:</label> 
+            <input type="datetime-local" name="datetimelocal" id="datetimelocal"
+       min="2020-06-07T00:00" max="2022-06-14T00:00">
+        <!-- With min/max our calendar will only shows dates within our range -->
+           
+            <label for="time">Time:</label> 
+            <input type="time" name="time" id="time">
+            
+            <label for="week">Week:</label> 
+            <input type="week" name="week" id="week">
+            
+            <label for="month">Month:</label> 
+            <input type="month" name="month" id="month">
+            
+            <label for="range">Range:</label> 
+            <input type="range" name="range" id="range">
+
+        </fieldset>
+    </form>
+</body>
+</html>
