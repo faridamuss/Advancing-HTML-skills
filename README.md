@@ -14,3 +14,6 @@ In these course I learnt:
 
 ### Form with floating labels
 ![form with floating labels](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Form_floating_labels.gif)
+
+### Login Form
+![login form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/loginForm.mp4)
