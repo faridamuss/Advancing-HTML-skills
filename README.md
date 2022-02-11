@@ -17,3 +17,6 @@ In these course I learnt:
 
 ### Login Form
 ![login form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Login_Form.gif)
+
+### Booking Form
+![booking form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/booking-Form.gif)
