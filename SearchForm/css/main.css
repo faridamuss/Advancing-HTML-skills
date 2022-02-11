@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+    background: url(../images/jungleUp.jpg) repeat-x bottom center fixed,
+                 url(../images/jungleDown.jpg) repeat-x top center;
+    padding: 1em;
+}
+
+p {
+    padding: 0 1em;
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#wrapper {
+    border-radius: 8px;
+    border: solid 2px #53b467;
+    margin: 1em auto 2em;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0px 0px 10px rgba(27, 87, 79, .8);
+    max-width: 1000px;
+}
+
+header#main {
+    display: grid;
+    grid-template-areas: 
+        "l l"
+        "s s"
+        "n n"; 
+}
+#logo { grid-area: l;}
+
+.swrap { 
+    grid-area: s;
+    background-color: #70c5b58c;
+    padding: 0.0em;
+    border-bottom: solid 10px #70c5b505;
+}
+
+nav { grid-area: n;}
+        
+#logo {
+    background: url(../images/birdLogo.svg) no-repeat 0px 0px;
+    padding-left: 2.5em;
+    height: 90px;
+    color: #42b490;
+    padding-top: .5em;
+    margin-bottom: .5em;
+    line-height: 1;
+    text-align: left;
+    width: 100%;
+}
+
+#logo span {
+    font-weight: 300;
+    font-size: 1rem;
+    display: block;
+    padding-left: 6px;
+}
+
+nav { 
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    padding: .25em;
+    border-bottom: solid 1px salmon;
+}
+
+nav li:first-of-type {
+    border-top: solid 1px salmon;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: .25em;
+    color: #42b490;
+}
+
+#intro {
+    text-align: center;
+    background:  url(../images/walkway.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+#intro header {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,.6);
+    padding: 2em 1em;
+}
+
+#intro h1 {
+    order: 2;
+    margin-bottom: .75em;
+}
+
+#intro div {
+    order: 3;
+}
+
+#intro a {
+    border-radius: 10px;
+    background-color: #3ab49d;
+    padding: 10px;
+    display: inline;
+    width: 100px;
+    margin: 0 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+#intro a:last-child {
+    background-color: #eccd29;
+    background-color: #f39942;
+}
+
+#about h1 {
+    padding: 0 .5em;
+    color: #3ab49d;
+}
+
+#products h1, #services h1, #contact h1 {
+    padding: 2em 1em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #333;
+    margin-bottom: .25em;
+}
+
+#palms h1 {
+    background: url(../images/palm.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+#cycads h1 {
+    background: url(../images/cycad.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#tropicals h1 {
+    background: url(../images/heliconia.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#services h1 {
+    background: url(../images/services.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#services ul {
+    margin: .5em 3em 1em;
+}
+#services p {
+    padding: 0;
+    margin-bottom: .5em;
+}
+
+ #contact h1 {
+    background: url(../images/contact.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 200%;
+    color: #277e5c;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 125%;
+    font-weight: 300;
+    color: #666;
+}
+
+#contact {
+    background-color: #70c5b5b8;
+    color: #fff;
+    padding-bottom: 2em;
+}
+
+#contact p:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 2em;
+}
+
+/* adjust phone link, place in main.css */
+a[href^="tel:"] {
+  color: #2d8073;
+}
+
+@media screen and (min-width: 600px) {
+    
+    header#main {
+        grid-template-areas: 
+        "l n"
+        "s s"; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #logo, nav {
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+    nav {
+        text-align: inherit;
+    }
+    
+    nav li {
+        display: inline-block;
+        border: none!important;
+    }
+    
+    #intro {
+        border-top: solid 1px salmon;
+    }
+    
+    #intro h1 {
+        padding: 0 2em;
+    }
+    
+    #about h1  {
+        padding: 0 4em;
+    }
+    
+    section p {
+        padding: 1em 8em;
+        line-height: 1.6;
+    }
+    
+    #services ul {
+        margin: 1.5em 8em 2em;
+    }
+}
+
+
+ 
