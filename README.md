@@ -18,5 +18,8 @@ In these course I learnt:
 ### Login Form
 ![login form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Login_Form.gif)
 
-### Booking Form
+### Search Form
+![search form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Search-Form.gif)
+
+### Booking Form on Desktop and Mobile
 ![booking form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/booking-Form.gif)
