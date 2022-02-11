@@ -1,0 +1,152 @@
+button.plus, button.minus { 
+    border: solid 2px #dfe5e9;
+    background-color: #fff;
+    padding: .5em;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    height: 32px;
+}
+
+button.minus { 
+    border-right-style: none;
+    border-radius: 6px 0 0 6px;
+    left: 5px;
+}
+
+button.plus {
+    border-left-style: none;
+    border-radius: 0 6px 6px 0;
+    right: 40px;
+}
+
+button.plus i, button.minus i { 
+    font-size: 1.5em;
+    color: #4fa3e3;
+}
+
+button:focus {
+    outline: none;
+}
+
+input.stepper-control { 
+    border: solid 2px #dfe5e9;
+    height: 32px;
+    width: 50px;
+    padding: .5em;
+    text-align: center;
+    font-size: 1em;
+    position: absolute;
+    left: 32px;
+}
+
+label.stepper-label { 
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+    height: 24px;
+    font-size: 12px;
+    color: #98c9ee;
+}
+
+/* remove the default up/down arrows from webkit */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+        
+/* remove the default up/down arrows from FF  */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/* fix for Safari, otherwise stepper component is not on 1 line */
+.stepper {
+/*    width: 110px;*/
+    width: 150px; /* make a little wider */
+    position: relative; /* need this so we can use absolute on children */
+}
+
+#details  {
+    display: block;
+}
+
+.form-group.selectNum {
+    display: inline-block;
+    margin-right: 1em;
+    width: 40%;
+}
+
+.travelClass {
+/*    width: 48.5%;*/
+    width: 100%;
+    margin-top: 2.5em; /* on small screen need more spacing ebtween this and steppers */
+}
+
+#flightBook .form-label {
+    z-index: 10;
+}
+
+#flightBook .form-control, #flightBook .stepper-control {
+   background-clip: padding-box;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    position: relative; /* need to position relative so I can position the date info*/
+}
+
+input:focus, select:focus {
+    outline: solid 2px #3dc2dc;
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 5px #3dc2dc;
+    border-radius: 4px;
+}
+
+#flightBook .form-control:[type="date"] {
+    width: 100%;
+	min-width: 230px;
+}
+
+@media screen and (min-width: 430px) {
+    #flightBook .form-control:[type="date"] {
+        min-width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        height: 100vh;
+    }
+    
+    /* bring travel class item up so it aligns with passengers, adjust width */
+    .travelClass {
+        margin-top: 0;
+        width: 89%;
+    }
+    
+    /* adjust spacing of passengers and travel class at large screen */
+    #details {
+        display: grid;
+        grid-template-columns: 23% 24.5% 54.5%;
+        grid-column-gap: 2%;
+    }
+    
+    /* ensure that passenger fields appear on 1 line at large screen */
+    .form-group.selectNum {
+        width: 100%;
+    }
+    
+    #booking {
+        max-width: 850px;
+    }
+}

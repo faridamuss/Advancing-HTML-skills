@@ -1,0 +1,71 @@
+.form-group {  
+	position: relative; 
+}
+
+#flightBook .form-label {
+	position: absolute;
+	top: 6px;
+	left: 20px;
+}
+
+/* --- CUSTOM RADIO BUTTONS --- */
+/* hide the original radio buttons */
+#formSection #tripType input { 
+	position: absolute;
+	margin-left: -9999px;
+	visibility: hidden;
+}
+
+#flightBook #tripType label { 
+	display: block;
+    margin-bottom: .5em;
+    position: relative;
+	padding-top: 4px;
+	padding-left: 30px;
+	font-weight: 700;
+	color: #191a1e;
+}
+
+#flightBook #tripType input+span { 
+	position: absolute;
+	left: 2px;
+	top: 4px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 2px solid #dfe5e9;
+	border-radius: 50%;
+}
+
+#flightBook #tripType input+span:after { 
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	border-radius: 50%;
+	background-color: #4fa3e3;
+	transform: translate(-50%, -50%);
+	transition: 0.2s all;
+}
+
+#flightBook #tripType input:not(:checked)+span:after {
+	opacity: 0;
+}
+
+#flightBook #tripType input:checked+span:after {
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+}
+
+@media screen and (min-width: 430px) {
+
+    #flightBook #tripType label { 
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
+
+

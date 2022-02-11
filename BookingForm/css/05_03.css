@@ -1,0 +1,32 @@
+/* hide the default select arrows and browser renderings */
+#flightBook select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* remove default select arrows in FF*/
+select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+#flightBook select.form-control+.select-arrow { 
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #dfe5e9;
+	font-size: .875em;
+}
+
+
+
+
+
+

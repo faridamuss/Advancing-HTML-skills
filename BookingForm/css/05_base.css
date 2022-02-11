@@ -1,0 +1,177 @@
+* { /* basic page reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: url('../images/island.jpg') no-repeat;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+}
+
+main { /* adjust overall page width and center content */
+    margin: auto;
+    width: 90%; /* give page content some room to breathe*/
+    max-width: 1150px;
+}
+
+/*
+section {
+	position: relative;
+}
+*/
+
+
+#booking { 
+    max-width: 800px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.2) 100%);
+    border-radius: 6px 6px 0 0;
+	margin: auto;
+}
+
+header {
+    padding: 2em;
+}
+
+#formSection { /* form container */
+/*	position: relative;*/
+	background: #fff;
+	margin: 1em auto;
+	padding: 1.5625em;
+	border-radius: 6px;
+	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.form-group { /* seperate out the 'rows' of form inputs */
+	/* position: relative; we will be positioning the labels a little bit differently for this form so we need relative on this item */
+	margin-bottom: 20px;
+}
+
+#flightBook .form-control { /* style the trip duration radio buttons - style the inputs and select items */
+	background-color: #fff;
+	height: 60px;
+	padding: 24px 15px 0;
+	color: #191a1e;
+	border: 2px solid #dfe5e9;
+    font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 4px;
+    display: block;
+    width: 100%;
+}
+
+/* input focus style, customize color of focus state */
+input:focus, select:focus {
+    outline: solid 2px #4fa3e3;
+    box-shadow: 0 0 3px #4fa3e3;
+}
+
+/* style the placeholder text (light grey), still need vendor prefixs for a few browsers, including edge 12-18 */
+#flightBook .form-control::-webkit-input-placeholder {
+	color: #dfe5e9;
+}
+
+#flightBook .form-control:-ms-input-placeholder {
+	color: #dfe5e9;
+}
+
+#flightBook .form-control::placeholder {
+	color: #dfe5e9;
+}
+
+.flightBook .form-control:focus {
+	background: #f9fafb;
+}
+
+#flightBook .form-label { /* style labels */ 
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 12px;
+	color: #98c9ee;
+}
+
+/* show flights button */
+#flightBook .submit-btn {
+	color: #fff;
+    cursor: pointer;
+	background-color: #4fa3e3;
+	font-weight: 400;
+	height: 65px;
+	font-size: 18px;
+	border: none;
+	width: 100%;
+	border-radius: 4px;
+	text-transform: uppercase
+}
+
+#cta {
+	margin-top: 45px;
+}
+
+#cta h1 {
+	font-size: 2.5em;
+/*	text-transform: uppercase;*/
+	color: #4fa3e3;
+	font-weight: 400;
+}
+
+#cta p {
+	font-size: 1.275em;
+	color: #191a1e;
+}
+
+/* mid screen layout */
+@media screen and (min-width: 430px) {
+    
+    #flightBook #tripType label+label { /* create some additional spacing between 2nd and 3d radio button labels. */
+        margin-left: 15px;
+    }
+    #flightBook #tripType label { /* style the radio buttons labels */ 
+        display: inline-block;
+        margin-bottom: 0;
+    }
+	
+/* make a 2 column layout */
+    #placeDate, #details {
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        grid-column-gap: 3%;
+    }
+
+}
+/* large screen layout */
+@media screen and (min-width: 960px) { /* create 2 columns with CTA and form */
+    #booking {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.4) 100%);
+        border-radius: 6px 0 0 6px;
+		display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 20% auto;
+        max-width: 100%;
+    }
+	
+    #cta {
+         margin-top: 0; 
+        margin-right: 1.5em;
+    }
+
+    #formSection { /* make the form span the available space */
+        margin: 0;
+    }
+/* last form row should be 3 columns */
+     #details {
+        display: grid;
+        grid-template-columns: 28% 28% 38%;
+        grid-column-gap: 3%;
+    }
+    
+    
+    
+    
+    
+}

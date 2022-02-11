@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight booking</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/05_base.css">
+    <link rel="stylesheet" href="css/05_02.css">
+    <link rel="stylesheet" href="css/05_03.css">
+    <link rel="stylesheet" href="css/05_04.css">
+    <link rel="stylesheet" href="css/05_05.css">
+    <link rel="stylesheet" href="css/05_06.css">
+
+</head>
+
+<body>
+    <main>
+        <section id="booking">
+            <article id="cta">
+                <header>
+				    <h1>Book your flight today</h1>
+				    <p>Anytime you visit the islands it is life changing in some way. Breathtaking scenery, friendly faces and the aloha spirit — come for a visit, you won't regret it.</p>
+                </header>
+            </article>
+            
+            <article id="formSection">
+                <form action="#" id="flightBook">
+                   
+                    <div id="tripType" class="form-group">
+                        <label for="roundTrip">
+				            <input type="radio" id="roundTrip" name="flight-type">
+							<span></span>Roundtrip
+				        </label>
+						<label for="oneWay">
+							<input type="radio" id="oneWay" name="flight-type">
+							<span></span>One way
+						</label>
+						<label for="multiCity">
+							<input type="radio" id="multiCity" name="flight-type">
+							<span></span>Multi-City
+						</label>
+                    </div>
+                    
+                    <div id="placeDate">
+                        <div class="form-group">
+                            <label class="form-label" for="flyingFrom">From</label>
+                            <input class="form-control" id="flyingFrom" type="text" placeholder="City or airport">
+                        </div>
+
+                       <div class="form-group">
+                            <label class="form-label" for="flyingTo">To</label>
+                            <input class="form-control" id="flyingTo" type="text" placeholder="City or airport">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="departing">Departing date</label>
+                            <input class="form-control dateInput" id="departing" type="date" required>
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="returning">Returning date</label>
+                            <input class="form-control dateInput" id="returning" type="date" required>
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+              
+                    <h3>Passengers</h3>
+                    <div id="details">
+                        <div class="form-group selectNum">
+                           <label class="stepper-label" for="numOfAdults">Adults (18+)</label>
+                            <div class="stepper">
+                                <button class="minus"><i class="fas fa-minus"></i></button><input class="stepper-control" id="numOfAdults" type="number" value="0"><button class="plus"><i class="fas fa-plus"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="form-group selectNum">
+                           <label class="stepper-label" for="numOfKids">Children (0-17)</label>
+                            <div class="stepper">
+                                <button class="minus" id="minus"><i class="fas fa-minus"></i></button><input class="stepper-control" id="numOfKids" type="number" value="0" max="10"><button class="plus"><i class="fas fa-plus"></i></button>
+                         </div>           
+                        </div>
+
+                        <div class="form-group travelClass">
+                                <label class="form-label" for="travClass">Travel class</label>
+                                <select class="form-control" id="travClass">
+                                        <option>Economy class</option>
+                                        <option>Business class</option>
+                                        <option>First class</option>
+                                </select>
+                                 <i class="fa fa-arrow-down select-arrow" aria-hidden="true"></i>
+                        </div>
+                   </div>
+              
+                    <div class="form-btn">
+						<button class="submit-btn">Show flights</button>
+					</div>
+               
+                </form>
+            </article>
+        </section>
+        
+    </main>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>        
+        $('.plus').click( function(){ 
+             var counter = $(this).siblings().filter('input').val(); 
+             counter++; 
+             $(this).siblings().filter('input').val(counter); 
+             return false; 
+        });
+        
+        $('.minus').click( function(){ 
+             var counter = $(this).siblings().filter('input').val();
+            if(counter > 0){
+                counter--;
+                $(this).siblings().filter('input').val(counter);
+            }
+             return false;
+        });
+    </script>
+</body>
+</html>
