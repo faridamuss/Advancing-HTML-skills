@@ -1,0 +1,84 @@
+/* -------- 04-03 styles -------- */
+
+#loginLanding #sign header { /* change header bg color */
+    background-color: rgb(16,122,162);
+}
+
+#loginForm { /* set form bg color to a white with slight transparency*/
+    background-color: rgba(255,255,255,.9);
+}
+
+#sign article#loginForm { /* make labels align left */
+    text-align: left;
+}
+
+#sign article#loginForm div { /* align the button to be center */
+    text-align: center; 
+}
+
+label, input { 
+    display: block;
+}
+
+label { /* syle the labels  */
+    font-size: .8rem;
+    color: #767676;
+}
+
+input {
+    margin-bottom: 1em;
+    border-radius: 6px;
+    padding: 6px;
+    border: solid 1px #9B9B9B;
+    width: 100%;
+}
+
+#loginBtn {
+    background-color: rgb(16,122,162);
+    border: solid 2px rgb(16,122,162);
+    margin-bottom: 25px;
+}
+
+form .fas { /* color the font awesome icons */
+    color: #d1d1d1;
+}
+
+#sign aside p { /* style the forgot login info */
+    font-size: .625rem;
+    text-align: center;
+}
+
+aside a {
+    color: #107AA2;
+}
+
+
+/* -------- 04-04 styles -------- */
+div#pwdWrap {
+    display: flex; 
+    align-items: center; 
+    border: solid 1px #9b9b9b; 
+    background-color: #fff; 
+    border-radius: 6px;
+}
+
+form .fa-eye {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: #888; 
+}
+
+form .fa-eye-slash {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: #888; 
+    font-size: .95em; 
+}
+
+input#password {
+    margin-bottom: 0; 
+    border: none; 
+}
+
+
+

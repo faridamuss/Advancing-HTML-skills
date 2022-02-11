@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Garden | Making small changes to save our seas | Login</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/04_base.css">
+    <link rel="stylesheet" href="css/04_form.css">
+
+</head>
+
+<body id="loginLanding">
+   <main class="wrapper">
+		<header id="logo">
+		   <h1>Sea Garden</h1>
+	   </header>
+		<section id="sign">
+			<header>
+				<h1>Log in to your Sea Garden account</h1>
+			</header>
+			<article id="loginForm">
+				<form action="#" method="post">
+
+					<label for="email"><i class="fas fa-envelope"></i> Email</label>
+
+					<input type="email" id="email" name="email" required>
+
+					<label for="password"><i class="fas fa-lock"></i> Password</label>
+					<div id="pwdWrap">
+						<input type="password" id="password" name="password" required>
+						<i class="fas fa-eye eyeIcon"></i>
+					</div>
+
+					<div>
+						<button type="submit" id="loginBtn">Login <i class="fas fa-angle-right"></i></button>
+					</div>
+
+					<aside>
+						<p><a href="#">Forgot your password?</a> <br> Don’t have a Sea Garden account? <a href="#">Join Now</a>.</p>
+					</aside>
+				</form>
+			</article>
+		</section>
+   </main>
+    
+    <script>
+
+        const visToggle = document.querySelector('.eyeIcon');
+
+        const input = document.querySelector('#pwdWrap input');
+        
+        var password = true;
+        
+       visToggle.addEventListener('click', function(){
+                 if(password) {
+                     input.setAttribute('type','text'); // using js dynamically changed the type attribute
+                     visToggle.classList.remove('fa-eye');
+                     visToggle.classList.add('fa-eye-slash');
+                 } else {
+                     input.setAttribute('type','password');
+                     visToggle.classList.remove('fa-eye-slash');
+                     visToggle.classList.add('fa-eye');
+                 }
+            password = !password;
+              });
+
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
