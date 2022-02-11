@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: url(images/jungleUp.jpg) repeat-x bottom center fixed,
+               url(images/jungleDown.jpg) repeat-x top center;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+form {
+margin: 2em 0;
+}
+
+fieldset {
+  border-radius: 8px;
+  border: solid 2px #53b467;
+  padding: 1em 2em;
+  margin: 0 .75em 1.5em .75em;
+  background-color: rgba(255,255,255,.8);
+  box-shadow: 0px 0px 10px rgba(27, 87, 79, .8);
+}
+
+legend {
+  font-size: 2em;
+  padding: 0 .5em;
+  text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #efe342, 0 0 6px #efe342;
+  color: #e06245;
+  font-weight: 700;
+}
+
+input#submit {
+  background-color: #42b490;
+  color: #fff;
+}
+
+.field {
+display: flex;
+flex-flow: column-reverse;
+margin-bottom: 1.5em;
+position: relative;
+}
+
+input, textarea {
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+  cursor: text;
+  color: #707070;
+}
+
+textarea {
+  min-height: 160px;
+}
+
+label {
+  color: #42b490;;
+  font-size: .8em;
+}  
+
+/* ------- add float label styles here ------- */
+input:focus, textarea:focus {
+  outline: 0;
+  border-bottom: 2px solid #329c7a;
+}
+
+label, input, textarea {
+   transition: all 0.2s; 
+   touch-action: manipulation; 
+}
+
+input:placeholder-shown + label, textarea:placeholder-shown + label {
+  cursor: text;
+  max-width: 70%; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: -2.125rem 0; 
+  transform: translate(0, 2.125rem) scale(1.25); 
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label,
+textarea:not(:placeholder-shown) + label,
+textarea:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}   
+
+
+
+@media screen and (min-width: 700px) {
+  fieldset {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+}
+
+
+
