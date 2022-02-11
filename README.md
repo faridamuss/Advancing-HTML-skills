@@ -8,3 +8,6 @@ In these course I learnt:
 - how to create solid document structures;
 - present images, audio, and video clearly and efficiently;
 - use metadata to enable browser and crawler features.
+
+### Simple Form 
+![example of simple form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Simple%20form.gif)
