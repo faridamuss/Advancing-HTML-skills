@@ -12,11 +12,11 @@ In these course I learnt:
 ### Simple Contact Us Form
 ![Contact us form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Contact_Us_Form.gif)
 
-### Form with Floating Labels
-![form with floating labels](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Form_floating_labels.gif)
-
 ### Login Form
 ![login form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Login_Form.gif)
+
+### Form with Floating Labels
+![form with floating labels](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Form_floating_labels.gif)
 
 ### Search Form
 ![search form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Search-Form.gif)
