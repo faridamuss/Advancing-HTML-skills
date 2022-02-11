@@ -9,10 +9,10 @@ In these course I learnt:
 - present images, audio, and video clearly and efficiently;
 - use metadata to enable browser and crawler features.
 
-### Simple Form 
-![example of simple form](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Simple%20form.gif)
+### Simple Contact Us Form
+![Contact us form]()
 
-### Form with floating labels
+### Form with Floating Labels
 ![form with floating labels](https://github.com/faridamoussaeff/Advancing-HTML-skills/blob/main/Docs/Form_floating_labels.gif)
 
 ### Login Form
