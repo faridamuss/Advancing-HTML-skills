@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Media</title>
+</head>
+<body>
+  <h1>Video and audio files</h1>
+  <!-- Linking video file - -->
+  <a href="media/video.mp4">Watch Video File:</a>
+  <!-- Download a video -->
+  <a href="media/video.mp4" download="media/video.mp4">Download Video File: </a>
+
+  Embedded video file
+  <iframe src="media/video.mp4" width="640" height="360">
+  </iframe>
+
+  <!-- This is how we can link audio files to our website: -->
+  <!-- <audio src="media/audio.mp3"controls></audio> -->
+<figure>
+<figcaption>Listen to the audio file: </figcaption>
+  <audio preload="metadata" controls>
+    <source src="media/audio.mp3" type="audio/mpeg"/>
+    <source src="media/audio.ogg" type="audio/ogg;codecs=vorbis"/>
+    Sorry ... your browser does not support the audio element 
+  </audio>
+</figure>
+
+<!-- Work with video attribute -->
+<video src="media/video.mp4" poster="media/still.png" preload="metadata" width="600" controls>
+  <track default label="English" kind="captions" srclang="en" src="media/captions.vtt">
+</video>
+
+</body>
+</html>

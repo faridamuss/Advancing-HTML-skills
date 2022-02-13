@@ -1,0 +1,26 @@
+body{
+  background-color: rgb(37, 37, 37);
+}
+a{
+  color: aliceblue;
+  margin-bottom: 35px; 
+  margin-left: 20px;
+  display: block; 
+}
+figcaption{
+  font-family: Arial, Helvetica, sans-serif;
+  color: blanchedalmond; 
+  padding: 10px; 
+}
+audio{
+padding: 10px;
+margin-left: 5px; 
+}
+h1{
+  margin-left: 20px;
+  color: aliceblue;
+}
+iframe {
+  margin-left: 20px;
+  border: none; 
+}
