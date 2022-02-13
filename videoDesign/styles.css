@@ -1,0 +1,17 @@
+body {
+  background-color: grey
+}
+
+#video-container {
+  height: 450px; 
+  width: 100%; 
+  overflow: hidden; 
+  position: fixed; 
+  top: 0; 
+  left:0;
+}
+#content-container{
+  position: relative; 
+  color: purple;
+  top: 0;
+}
